@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<keywordspec generated="20170129 18:25:08" type="library" name="MobileLibrary" format="ROBOT">
+<version>0.1</version>
+<scope>test suite</scope>
+<namedargs>yes</namedargs>
+<doc>Documentation for test library ``MobileLibrary``.</doc>
+<kw name="Clear Result">
+<arguments>
+</arguments>
+<doc>Clears result field</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Do Simple Math">
+<arguments>
+<arg>expression</arg>
+</arguments>
+<doc>Expression should be a simple 2 operands mathematical operation like "2+3"
+It uses the calculator and checks if the result provided by that is correct
+Expects that the calculator is already open
+Internally uses evaluate to get expected result that will
+be matched against the result provided by the calculator
+Operations supported are +, /, -, *
+
+*Known limitations* (these can also be covered but they have no added value for this this exercise):
+    - Only unsigned integers are supported
+    - No decimal precision supported when validating result</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Ensure Application Is Open">
+<arguments>
+<arg>platform</arg>
+</arguments>
+<doc>Checks if applications is still open and
+tries to restart it if not</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Get Result">
+<arguments>
+</arguments>
+<doc>Gets result from calculator</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Open Mobile Application">
+<arguments>
+<arg>platform</arg>
+</arguments>
+<doc>Opens the application specified
+            and sets the internal desired capabilities for it.
+            
+*Arguments:*
+            - platform - Android (only one supported for now)
+            
+*Example:*
+            | Open Mobile Application | Android |</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Push Button">
+<arguments>
+<arg>button_text</arg>
+</arguments>
+<doc>Pushes specified button
+        
+*Arguments:*
+        button_text - button text
+        
+*Example:*
+        | Push Button | 1 |
+        | Push Button | = |</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Result Should Be">
+<arguments>
+<arg>expected_result</arg>
+</arguments>
+<doc>Gets the value from the result field
+        and checks if it matches the expected result
+        
+*Arguments:*
+        expected_result - expected result
+        
+*Example:*
+        | Result Should Be | 2 |
+        | Result SHould Be | ${EMPTY} |</doc>
+<tags>
+</tags>
+</kw>
+<kw name="Type Expression">
+<arguments>
+<arg>expression</arg>
+</arguments>
+<doc>Types specified expression
+        
+*Arguments:*
+        expression - expression to be typed
+        
+*Example:*
+        | Type Expression | 1+2 |
+        | Push Button | = |</doc>
+<tags>
+</tags>
+</kw>
+</keywordspec>
