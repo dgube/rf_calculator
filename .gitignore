@@ -1,0 +1,20 @@
+# Created by .ignore support plugin (hsz.mobi)
+### Example user template template
+### Example user template
+
+# IntelliJ project files
+*.iml
+out
+gen
+
+# logs
+log
+log_archive
+log.zip
+
+# pyc files
+libraries/*.pyc
+libraries/MobileLibrary/*.pyc
+libraries/MobileLibrary/keywords/*.pyc
+libraries/MobileLibrary/locators/*.pyc
+resources/*.pyc

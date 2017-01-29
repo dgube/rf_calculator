@@ -14,7 +14,7 @@ class Listener(object):
     def __init__(self, filename='robot_listens.txt'):
         super(Listener, self).__init__()
         outpath = os.path.join(tempfile.gettempdir(), filename)
-        print('Listener log location: %s' + outpath)
+        print('Listener log location: %s' % outpath)
         self.outfile = open(outpath, 'w')
         self.builtin = BuiltIn()
 
