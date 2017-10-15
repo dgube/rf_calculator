@@ -20,6 +20,7 @@ simple-calculator-app/ and automates few simple tests using Robot Framework and 
 The project is a simple Python project created with PyCharm. Tested with a real Android device.
 
 - To install/configure a a git client go to [Git](https://git-scm.com/downloads)  
+- To install Node.js go to [Node.js](https://nodejs.org/en/download/)
 - To install/configure Appium go to [Appium](http://appium.io/)  
 - To install/configure Python 2.7.13 go to [Python 2.7.13](https://www.python.org/downloads/release/python-2713/)  
 
